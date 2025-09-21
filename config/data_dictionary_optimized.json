@@ -21,7 +21,7 @@
     },
     "I_TIMEBASE": {
       "role": "TIMEBASE",
-      "data_type": "NUMERIC",
+      "data_type": "INTEGER",
       "format": "YYYYMM",
       "description": "Zeitbasierte Spalte im Format YYYYMM (z.B. 202412 für Dezember 2024)",
       "auto_classified": true,
@@ -43,7 +43,7 @@
     },
     "N_DIGITALIZATIONRATE": {
       "role": "CATEGORICAL_FEATURE",
-      "data_type": "CATEGORICAL",
+      "data_type": "DOUBLE",
       "auto_classified": true,
       "feature_group": "categorical_features",
       "use_in_cox": true,
@@ -52,7 +52,7 @@
     },
     "I_MAINTENANCE": {
       "role": "DYNAMIC_FEATURE",
-      "data_type": "NUMERIC",
+      "data_type": "INTEGER",
       "auto_classified": true,
       "use_in_cox": true,
       "cox_treatment": "rolling_features",
@@ -60,7 +60,7 @@
     },
     "I_UPGRADE": {
       "role": "DYNAMIC_FEATURE",
-      "data_type": "NUMERIC",
+      "data_type": "INTEGER",
       "auto_classified": true,
       "use_in_cox": true,
       "cox_treatment": "rolling_features",
@@ -68,7 +68,7 @@
     },
     "I_UPSELL": {
       "role": "DYNAMIC_FEATURE",
-      "data_type": "NUMERIC",
+      "data_type": "INTEGER",
       "auto_classified": true,
       "use_in_cox": true,
       "cox_treatment": "rolling_features",
@@ -76,7 +76,7 @@
     },
     "I_DOWNGRADE": {
       "role": "DYNAMIC_FEATURE",
-      "data_type": "NUMERIC",
+      "data_type": "INTEGER",
       "auto_classified": true,
       "use_in_cox": true,
       "cox_treatment": "rolling_features",
@@ -84,7 +84,7 @@
     },
     "I_DOWNSELL": {
       "role": "DYNAMIC_FEATURE",
-      "data_type": "NUMERIC",
+      "data_type": "INTEGER",
       "auto_classified": true,
       "use_in_cox": false,
       "cox_treatment": null,
@@ -92,7 +92,7 @@
     },
     "I_UHD": {
       "role": "DYNAMIC_FEATURE",
-      "data_type": "NUMERIC",
+      "data_type": "INTEGER",
       "auto_classified": true,
       "use_in_cox": false,
       "cox_treatment": null,
@@ -100,7 +100,7 @@
     },
     "I_CONSULTING": {
       "role": "DYNAMIC_FEATURE",
-      "data_type": "NUMERIC",
+      "data_type": "INTEGER",
       "auto_classified": true,
       "use_in_cox": false,
       "cox_treatment": null,
@@ -108,7 +108,7 @@
     },
     "I_SEMINAR": {
       "role": "DYNAMIC_FEATURE",
-      "data_type": "NUMERIC",
+      "data_type": "INTEGER",
       "auto_classified": true,
       "use_in_cox": false,
       "cox_treatment": null,
@@ -116,7 +116,7 @@
     },
     "I_SOCIALINSURANCENOTES": {
       "role": "DYNAMIC_FEATURE",
-      "data_type": "NUMERIC",
+      "data_type": "INTEGER",
       "auto_classified": true,
       "use_in_cox": false,
       "cox_treatment": null,
@@ -124,7 +124,7 @@
     },
     "I_Alive": {
       "role": "TARGET",
-      "data_type": "BINARY",
+      "data_type": "BOOLEAN",
       "auto_classified": true,
       "interpretation": {
         "meaning": "Customer Status",
@@ -192,751 +192,751 @@
       "data_type": "TEXT"
     },
     "I_CONSULTING_activity_rate_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_activity_rate_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_cummax_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_cummax_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_cumsum_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_cumsum_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_pct_change_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_pct_change_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_12p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_12p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_12p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_18p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_18p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_18p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_24p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_24p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_24p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_36p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_36p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_36p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_6p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_6p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_rolling_6p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_trend_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_CONSULTING_trend_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_activity_rate_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_activity_rate_18p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_activity_rate_24p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_activity_rate_36p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_activity_rate_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_cummax_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_cummax_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_cumsum_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_cumsum_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_pct_change_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_pct_change_18p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_pct_change_24p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_pct_change_36p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_pct_change_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_12p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_12p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_12p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_18p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_18p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_18p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_24p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_24p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_24p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_36p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_36p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_36p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_6p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_6p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_rolling_6p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_trend_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_trend_18p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_trend_24p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_trend_36p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNGRADE_trend_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_activity_rate_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_activity_rate_18p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_activity_rate_24p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_activity_rate_36p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_activity_rate_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_cummax_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_cummax_18p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_cummax_24p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_cummax_36p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_cummax_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_cumsum_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_cumsum_18p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_cumsum_24p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_cumsum_36p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_cumsum_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_pct_change_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_pct_change_18p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_pct_change_24p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_pct_change_36p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_pct_change_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_12p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_12p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_12p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_18p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_18p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_18p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_24p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_24p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_24p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_36p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_36p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_36p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_6p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_6p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_rolling_6p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_trend_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_trend_18p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_trend_24p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_trend_36p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_DOWNSELL_trend_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_activity_rate_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_activity_rate_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_cummax_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_cummax_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_cumsum_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_cumsum_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_pct_change_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_pct_change_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_12p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_12p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_12p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_18p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_18p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_18p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_24p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_24p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_24p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_36p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_36p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_36p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_6p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_6p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_rolling_6p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_trend_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_MAINTENANCE_trend_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_activity_rate_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_activity_rate_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_cummax_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_cummax_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_cumsum_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_cumsum_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_pct_change_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_pct_change_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_12p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_12p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_12p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_18p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_18p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_18p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_24p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_24p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_24p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_36p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_36p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_36p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_6p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_6p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_rolling_6p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_trend_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SEMINAR_trend_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_activity_rate_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_activity_rate_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_cummax_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_cummax_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_cumsum_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_cumsum_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_pct_change_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_pct_change_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_12p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_12p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_12p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_18p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_18p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_18p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_24p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_24p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_24p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_36p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_36p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_36p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_6p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_6p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_rolling_6p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_trend_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_SOCIALINSURANCENOTES_trend_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_activity_rate_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_activity_rate_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_cummax_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_cummax_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_cumsum_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_cumsum_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_pct_change_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_pct_change_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_12p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_12p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_12p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_18p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_18p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_18p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_24p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_24p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_24p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_36p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_36p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_36p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_6p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_6p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_rolling_6p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_trend_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UHD_trend_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_activity_rate_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_activity_rate_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_cummax_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_cummax_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_cumsum_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_cumsum_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_pct_change_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_pct_change_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_12p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_12p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_12p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_18p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_18p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_18p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_24p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_24p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_24p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_36p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_36p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_36p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_6p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_6p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_rolling_6p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_trend_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPGRADE_trend_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_activity_rate_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_activity_rate_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_cummax_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_cummax_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_cumsum_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_cumsum_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_pct_change_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_pct_change_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_12p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_12p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_12p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_18p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_18p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_18p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_24p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_24p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_24p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_36p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_36p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_36p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_6p_mean": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_6p_std": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_rolling_6p_sum": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_trend_12p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "I_UPSELL_trend_6p": {
-      "data_type": "DOUBLE"
+      "data_type": "INTEGER"
     },
     "N_DIGITALIZATIONRATE_above_05": {
       "data_type": "DOUBLE"
