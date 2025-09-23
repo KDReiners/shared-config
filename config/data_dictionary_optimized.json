@@ -124,17 +124,17 @@
     },
     "I_Alive": {
       "role": "TARGET",
-      "data_type": "BINARY",
+      "data_type": "INTEGER",
       "auto_classified": true,
       "interpretation": {
         "meaning": "Customer Status",
         "values": {
-          "true": "Customer is active/alive",
-          "false": "Customer has churned"
+          "1": "Customer is active/alive",
+          "0": "Customer has churned"
         },
-        "business_logic": "I_Alive = False indicates churn event",
+        "business_logic": "I_Alive = 0 indicates churn event",
         "aggregation_rules": {
-          "churn_calculation": "Count unique customers where I_Alive = False",
+          "churn_calculation": "Count unique customers where I_Alive = 0",
           "grouping_key": "Kunde",
           "temporal_dimension": "I_TIMEBASE"
         }
@@ -147,7 +147,7 @@
       "data_type": "INTEGER"
     },
     "I_ALIVE": {
-      "data_type": "BOOLEAN"
+      "data_type": "INTEGER"
     },
     "Churn_Wahrscheinlichkeit": {
       "data_type": "DOUBLE"
@@ -156,37 +156,37 @@
       "data_type": "DOUBLE"
     },
     "Predicted_Standard_0.5": {
-      "data_type": "BOOLEAN"
+      "data_type": "INTEGER"
     },
     "Threshold_Optimal": {
       "data_type": "DOUBLE"
     },
     "Predicted_Optimal": {
-      "data_type": "BOOLEAN"
+      "data_type": "INTEGER"
     },
     "Threshold_Elbow": {
       "data_type": "DOUBLE"
     },
     "Predicted_Elbow": {
-      "data_type": "BOOLEAN"
+      "data_type": "INTEGER"
     },
     "Threshold_F1_Optimal": {
       "data_type": "DOUBLE"
     },
     "Predicted_F1_Optimal": {
-      "data_type": "BOOLEAN"
+      "data_type": "INTEGER"
     },
     "Threshold_Precision_First": {
       "data_type": "DOUBLE"
     },
     "Predicted_Precision_First": {
-      "data_type": "BOOLEAN"
+      "data_type": "INTEGER"
     },
     "Threshold_Recall_First": {
       "data_type": "DOUBLE"
     },
     "Predicted_Recall_First": {
-      "data_type": "BOOLEAN"
+      "data_type": "INTEGER"
     },
     "source": {
       "data_type": "TEXT"
@@ -1015,6 +1015,24 @@
     },
     "survival_months": {
       "data_type": "TEXT"
+    },
+    "dt_inserted": {
+      "role": "EXCLUDED_FEATURE",
+      "data_type": "TIMESTAMP",
+      "auto_classified": true,
+      "description": "Insertion timestamp for data ingestion tracking - excluded from model training"
+    },
+    "id": {
+      "role": "EXCLUDED_FEATURE",
+      "data_type": "INTEGER",
+      "auto_classified": true,
+      "description": "Technical record ID - excluded from model training"
+    },
+    "id_files": {
+      "role": "EXCLUDED_FEATURE",
+      "data_type": "ARRAY",
+      "auto_classified": true,
+      "description": "Technical file reference IDs - excluded from model training"
     }
   },
   "algorithm_config": {
