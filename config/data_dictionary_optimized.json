@@ -124,17 +124,17 @@
     },
     "I_Alive": {
       "role": "TARGET",
-      "data_type": "BOOLEAN",
+      "data_type": "INTEGER",
       "auto_classified": true,
       "interpretation": {
         "meaning": "Customer Status",
         "values": {
-          "true": "Customer is active/alive",
-          "false": "Customer has churned"
+          "1": "Customer is active/alive",
+          "0": "Customer has churned"
         },
-        "business_logic": "I_Alive = False indicates churn event",
+        "business_logic": "I_Alive = 0 indicates churn event (1=alive, 0=churned)",
         "aggregation_rules": {
-          "churn_calculation": "Count unique customers where I_Alive = False",
+          "churn_calculation": "Count unique customers where I_Alive = 0",
           "grouping_key": "Kunde",
           "temporal_dimension": "I_TIMEBASE"
         }
@@ -147,7 +147,7 @@
       "data_type": "INTEGER"
     },
     "I_ALIVE": {
-      "data_type": "BOOLEAN"
+      "data_type": "INTEGER"
     },
     "Churn_Wahrscheinlichkeit": {
       "data_type": "DOUBLE"
